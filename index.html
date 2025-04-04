@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+
+    <link href="./output.css" rel="stylesheet">
+  </head>
+  <body class="bg-[linear-gradient(to_top,rgba(0,0,0,0.8)_50%,rgba(0,0,0,0.8)_50%),url('./src/2.avif')] bg-cover bg-center h-[109vh] p-4 w-full">
+    
+   <header>
+    <nav class="md:max-w-[1200px]  mx-auto" >
+        <div class="flex flex-row justify-between content-center space-x-2 md:px-2 ">
+        <!--logo-->
+<div class="text-yellow-600 text-3xl hidden md:block font-bold font-Tinos cursor-default md:pl-4 ">
+AnaCodes
+</div>
+
+<div class=" hidden md:flex cursor-pointer">
+    <ul class="flex space-x-4 text-white font-bold">
+        <li class=" hover:text-yellow-600 ">HOME</li>
+        <li class=" hover:text-yellow-600 ">ABOUT</li>
+        <li class=" hover:text-yellow-600 ">SERVICES</li>
+        <li class=" hover:text-yellow-600 ">DESIGNS</li>
+        <li class=" hover:text-yellow-600 ">CONTACTS</li>
+    </ul>
+</div>
+<div class="hidden md:flex text-white">
+    <label for="text" class="  cursor-text border-1 border-yellow-600 py-1 pl-2 pr-12 border-r-0 rounded-l-md text-nowrap">Type in here</label>
+    <input type="text" class=" cursor-default bg-yellow-600 text-center  rounded-r-md px-4 py-2 w-20" placeholder="Search">
+</div>
+</div>
+
+
+<!--mobile view-->
+<div class="flex space-x-3 justify-between md:hidden w-full">
+
+<div class="text-yellow-600 text-2xl md:hidden block font-bold font-Tinos cursor-default  ">
+    AnaCodes
+    </div>
+    
+    <div>
+    <span class="material-symbols-outlined text-white" id="menu-btn">
+        menu
+        </span>
+    </div>
+</div>
+
+
+    <div class=" md:hidden  hidden flex-col cursor-pointer justify-center items-center mt-6 space-y-4 bg-[linear-gradient(to_top,rgba(0,0,0,0.8)_50%,rgba(0,0,0,0.8)_50%)] py-4" id="nav-menu">
+
+        <div class="md:hidden flex text-white">
+            <label for="text" class="  cursor-text border-1 border-yellow-600 py-1 pl-2 pr-12 border-r-0 rounded-l-md text-nowrap">Type in here</label>
+            <input type="text" class=" cursor-default bg-yellow-600 text-center  rounded-r-md px-4 py-2 w-20" placeholder="Search">
+        </div>
+
+        <ul class="flex flex-col space-x-4 text-white font-bold space-y-4 " >
+            <li class=" hover:text-yellow-600 ">HOME</li>
+            <li class=" hover:text-yellow-600 ">ABOUT</li>
+            <li class=" hover:text-yellow-600 ">SERVICES</li>
+            <li class=" hover:text-yellow-600 ">DESIGNS</li>
+            <li class=" hover:text-yellow-600 ">CONTACTS</li>
+        </ul>
+        
+    </div>
+    
+
+
+    </nav>
+   </header>
+   <main class="flex flex-col md:flex-row space-y-10 justify-between content-center mx-auto space-x-2 md:max-w-[1200px] mt-10 md:mt-30  pb-16">
+
+<div class="flex flex-col justify-around space-y-6 w-full  p-4 ">
+<h1 class="text-white text-3xl md:text-4xl font-bold font-Tinos cursor-default md:text-left text-center ">
+    Web Design & <br><span class="text-yellow-600 text-5xl">Development</span> <br>
+    Course
+</h1>
+<p class="text-white text-lg font-Tinos cursor-default md:text-left text-center">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore consectetur beatae nulla aspernatur voluptatibus inventore. Sunt recusandae magni quibusdam, nisi et ullam explicabo veritatis quidem nesciunt incidunt cumque dolore.
+</p>
+<button class="bg-yellow-600 text-black px-4 py-2 rounded-md mx-auto md:mx-0 hover:bg-yellow-500 w-40">JOIN US</button>
+</div>
+
+<div class="flex space-y-4  bg-[linear-gradient(to_top,rgba(0,0,0,0.8)_50%,rgba(0,0,0,0.8)_50%)] p-4 md:w-sm justify-center py-8">
+   <form action="get">
+    <label for="email" class="flex justify-center bg-white text-yellow-600 font-bold text-lg rounded-md py-2 px-12 text-center text-nowrap">Login Here</label>
+    <input type="email" name="email" id="email" class=" text-white text-lg border-t-0 border-l-0 py-2 px-12 md:text-left text-center text-nowrap mt-6 border-2 border-b-yellow-600 border-r-white" placeholder="Enter Your Email">
+    <input type="email" name="email" id="email" class=" text-white text-lg border-t-0 border-l-0 py-2 px-12 md:text-left text-center text-nowrap mt-6 border-2 border-b-yellow-600 border-r-white" placeholder="Enter Your Password">
+    <button class="bg-yellow-600 text-black px-4 py-2 rounded-md hover:bg-yellow-500 w-full mt-6" type="submit">LOGIN</button>
+    <p class="text-white text-lg font-Tinos cursor-default  text-center mt-4">Don't have an account? <span class="text-yellow-600">Sign Up</span> here</p>
+    <p class="text-white text-lg font-Tinos cursor-default  text-center mt-4">Forgot Password? <span class="text-yellow-600">Click Here</span></p>
+   </form>
+
+</div>
+   </main>
+   <script src="./script.js"></script>
+  </body>
+  </html>
