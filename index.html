@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_" />
 
     <link href="./output.css" rel="stylesheet">
   </head>
@@ -28,8 +28,10 @@ AnaCodes
     </ul>
 </div>
 <div class="hidden md:flex text-white">
-    <label for="text" class="  cursor-text border-1 border-yellow-600 py-1 pl-2 pr-12 border-r-0 rounded-l-md text-nowrap">Type in here</label>
-    <input type="text" class=" cursor-default bg-yellow-600 text-center  rounded-r-md px-4 py-2 w-20" placeholder="Search">
+    <label for="text" class="flex cursor-text border-1 border-yellow-600 py-1 pl-2 pr-12  rounded-md text-nowrap"> <span class="material-symbols-outlined flex pr-4" >
+        search
+        </span> Search for... </label>
+    
 </div>
 </div>
 
@@ -40,6 +42,12 @@ AnaCodes
 <div class="text-yellow-600 text-2xl md:hidden block font-bold font-Tinos cursor-default  ">
     AnaCodes
     </div>
+    <div class="md:hidden flex text-white">
+        <label for="text" class="flex cursor-text border-1 border-yellow-600 py-1 pl-2 pr-12  rounded-md text-nowrap"> <span class="material-symbols-outlined flex pr-4" >
+            search
+            </span> Search for... </label>
+       
+    </div>
     
     <div>
     <span class="material-symbols-outlined text-white" id="menu-btn">
@@ -49,20 +57,18 @@ AnaCodes
 </div>
 
 
-    <div class=" md:hidden  hidden flex-col cursor-pointer justify-center items-center mt-6 space-y-4 bg-[linear-gradient(to_top,rgba(0,0,0,0.8)_50%,rgba(0,0,0,0.8)_50%)] py-4" id="nav-menu">
+    <div class=" md:hidden  hidden flex-col cursor-pointer justify-center items-center mt-6 space-y-4 bg-[linear-gradient(to_top,rgba(0,0,0,0.8)_50%,rgba(0,0,0,0.8)_50%)] py-4 drop-shadow-amber-300 [box-shadow:5px-5px-10px-#ffb703] rounded-md" id="nav-menu">
 
-        <div class="md:hidden flex text-white">
-            <label for="text" class="  cursor-text border-1 border-yellow-600 py-1 pl-2 pr-12 border-r-0 rounded-l-md text-nowrap">Type in here</label>
-            <input type="text" class=" cursor-default bg-yellow-600 text-center  rounded-r-md px-4 py-2 w-20" placeholder="Search">
-        </div>
 
-        <ul class="flex flex-col space-x-4 text-white font-bold space-y-4 " >
+        <ul class="flex flex-col space-x-4 text-white font-bold space-y-4 [drop-shadow-]" >
             <li class=" hover:text-yellow-600 ">HOME</li>
             <li class=" hover:text-yellow-600 ">ABOUT</li>
             <li class=" hover:text-yellow-600 ">SERVICES</li>
             <li class=" hover:text-yellow-600 ">DESIGNS</li>
             <li class=" hover:text-yellow-600 ">CONTACTS</li>
         </ul>
+        
+        
         
     </div>
     

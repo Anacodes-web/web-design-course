@@ -8,6 +8,19 @@
       --tw-space-x-reverse: 0;
       --tw-border-style: solid;
       --tw-font-weight: initial;
+      --tw-blur: initial;
+      --tw-brightness: initial;
+      --tw-contrast: initial;
+      --tw-grayscale: initial;
+      --tw-hue-rotate: initial;
+      --tw-invert: initial;
+      --tw-opacity: initial;
+      --tw-saturate: initial;
+      --tw-sepia: initial;
+      --tw-drop-shadow: initial;
+      --tw-drop-shadow-color: initial;
+      --tw-drop-shadow-alpha: 100%;
+      --tw-drop-shadow-size: initial;
     }
   }
 }
@@ -17,6 +30,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-yellow-500: oklch(79.5% 0.184 86.047);
     --color-yellow-600: oklch(68.1% 0.162 75.834);
     --color-black: #000;
@@ -207,9 +221,6 @@
   .h-\[109vh\] {
     height: 109vh;
   }
-  .w-20 {
-    width: calc(var(--spacing) * 20);
-  }
   .w-40 {
     width: calc(var(--spacing) * 40);
   }
@@ -291,14 +302,6 @@
   .rounded-md {
     border-radius: var(--radius-md);
   }
-  .rounded-l-md {
-    border-top-left-radius: var(--radius-md);
-    border-bottom-left-radius: var(--radius-md);
-  }
-  .rounded-r-md {
-    border-top-right-radius: var(--radius-md);
-    border-bottom-right-radius: var(--radius-md);
-  }
   .border-1 {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -310,10 +313,6 @@
   .border-t-0 {
     border-top-style: var(--tw-border-style);
     border-top-width: 0px;
-  }
-  .border-r-0 {
-    border-right-style: var(--tw-border-style);
-    border-right-width: 0px;
   }
   .border-l-0 {
     border-left-style: var(--tw-border-style);
@@ -367,6 +366,9 @@
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
   }
+  .pr-4 {
+    padding-right: calc(var(--spacing) * 4);
+  }
   .pr-12 {
     padding-right: calc(var(--spacing) * 12);
   }
@@ -378,9 +380,6 @@
   }
   .text-center {
     text-align: center;
-  }
-  .text-left {
-    text-align: left;
   }
   .font-Tinos {
     font-family: var(--font-Tinos);
@@ -416,6 +415,16 @@
   }
   .text-yellow-600 {
     color: var(--color-yellow-600);
+  }
+  .\[box-shadow\:5px-5px-10px-\#ffb703\] {
+    box-shadow: 5px-5px-10px-#ffb703;
+  }
+  .drop-shadow-amber-300 {
+    --tw-drop-shadow-color: color-mix(in srgb, oklch(87.9% 0.169 91.605) var(--tw-drop-shadow-alpha), transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-drop-shadow-color: color-mix(in oklab, var(--color-amber-300) var(--tw-drop-shadow-alpha), transparent);
+    }
+    --tw-drop-shadow: var(--tw-drop-shadow-size);
   }
   .hover\:bg-yellow-500 {
     &:hover {
@@ -509,6 +518,59 @@
   initial-value: solid;
 }
 @property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-drop-shadow-size {
   syntax: "*";
   inherits: false;
 }
